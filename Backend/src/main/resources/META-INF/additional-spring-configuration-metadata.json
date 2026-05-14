@@ -1,0 +1,78 @@
+{
+  "properties": [
+    {
+      "name": "application.profile",
+      "type": "java.lang.String",
+      "description": "Description for application.profile."
+    },
+    {
+      "name": "application.title",
+      "type": "java.lang.String",
+      "description": "Description for application.title."
+    },
+    {
+      "name": "application.version",
+      "type": "java.lang.String",
+      "description": "Description for application.version."
+    },
+    {
+      "name": "api.public.endpoint",
+      "type": "java.lang.String",
+      "description": "Description for api.public.endpoint."
+    },
+    {
+      "name": "api.cors.allowed-origins",
+      "type": "java.lang.String",
+      "description": "Description for api.cors.allowed-origins."
+    },
+    {
+      "name": "jwt.refresh.expiration",
+      "type": "java.lang.String",
+      "description": "Description for jwt.refresh.expiration."
+    },
+    {
+      "name": "upload.file.dir",
+      "type": "java.lang.String",
+      "description": "Description for upload.file.dir."
+    },
+    {
+      "name": "application.mail",
+      "type": "java.lang.String",
+      "description": "Description for application.mail."
+    },
+    {
+      "name": "application.password",
+      "type": "java.lang.String",
+      "description": "Description for application.password."
+    },
+    {
+      "name": "vnpay.url",
+      "type": "java.lang.String",
+      "description": "Description for vnpay.url."
+    },
+    {
+      "name": "vnpay.tmnCode",
+      "type": "java.lang.String",
+      "description": "Description for vnpay.tmnCode."
+    },
+    {
+      "name": "vnpay.hashSecret",
+      "type": "java.lang.String",
+      "description": "Description for vnpay.hashSecret."
+    },
+    {
+      "name": "vnpay.returnUrl",
+      "type": "java.lang.String",
+      "description": "Description for vnpay.returnUrl."
+    },
+    {
+      "name": "vnpay.ipnUrl",
+      "type": "java.lang.String",
+      "description": "Description for vnpay.ipnUrl."
+    },
+    {
+      "name": "vnpay.api.query",
+      "type": "java.lang.String",
+      "description": "Description for vnpay.api.query."
+    }
+  ] }

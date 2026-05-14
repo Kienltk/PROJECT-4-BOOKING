@@ -1,0 +1,83 @@
+name: staynia
+description: "staynia booking project."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bot_toast: ^4.1.3
+  flutter_localizations:
+    sdk: flutter
+  dio: ^5.9.0
+  flutter_bloc: ^9.1.1
+  intl: ^0.20.2
+  pretty_dio_logger: ^1.4.0
+  adaptive_dialog: ^2.5.0
+  flutter_secure_storage: ^9.2.4
+  responsive_framework: ^1.5.1
+  cached_network_image: ^3.4.1
+  flutter_svg: ^2.2.1
+  connectivity_plus: ^7.0.0
+  get_it: ^8.2.0
+  url_launcher: ^6.3.2
+  custom_refresh_indicator: ^4.0.1
+  flutter_localization: ^0.3.3
+  modal_bottom_sheet: ^3.0.0
+  permission_handler: ^12.0.1
+  timeago: ^3.7.1
+  file_picker: ^10.3.3
+  calendar_date_picker2: ^2.0.1
+  flutter_quill: ^11.5.0
+  vsc_quill_delta_to_html: ^1.0.5
+  flutter_html: ^3.0.0
+  json_annotation: ^4.9.0
+  
+
+
+  # flutter pub run build_runner build
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+  build_runner: ^2.10.1
+  json_serializable: ^6.11.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/image/logo.png"
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/image/
+    - assets/gif/
+    - assets/icon/
+    - assets/icon/file/
+    - assets/icon/common/
+    - assets/font/
+
+  fonts:
+    - family: SFProTextBold
+      fonts:
+        - asset: assets/font/SFProText-Bold.ttf
+    - family: SFProTextHeavy
+      fonts:
+        - asset: assets/font/SFProText-Heavy.ttf
+    - family: SFProTextMedium
+      fonts:
+        - asset: assets/font/SFProText-Medium.ttf
+    - family: SFProTextRegular
+      fonts:
+        - asset: assets/font/SFProText-Regular.ttf
+    - family: SFProTextSemibold
+      fonts:
+        - asset: assets/font/SFProText-Semibold.ttf

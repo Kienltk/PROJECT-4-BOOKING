@@ -1,0 +1,279 @@
+### User Registration
+POST http://localhost:8090/api/auth/register
+Content-Type: application/json
+
+{
+  "payload": {
+    "username": "testuser321",
+    "password": "password321",
+    "confirmPassword": "password321",
+    "fullName": "Test User",
+    "email": "testuser321@example.com",
+    "phone": "1234567890",
+    "type": 2
+  }
+}
+
+###
+
+### User Login
+POST http://localhost:8090/api/auth/login
+Content-Type: application/json
+
+{
+  "payload": {
+    "username": "testuser123",
+    "password": "password123"
+  }
+}
+
+###
+
+### Create Category - Hotel
+POST http://localhost:8090/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjEyMyIsImlhdCI6MTc2MTU3NTgwNiwiZXhwIjoxNzYxNTc5NDA2fQ.6B2yJqSI4hYvy-yev-x0-RVo3zpVSy2oTBHff3mzIH0
+
+{
+  "payload": {
+    "name": "Hotel",
+    "type": "CATEGORY", 
+    "description": "Comfortable hotel accommodations",
+    "icon": "hotel_icon"
+  }
+}
+
+###
+
+### Create Category - Villa
+POST http://localhost:8090/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjEyMyIsImlhdCI6MTc2MTU3NTgwNiwiZXhwIjoxNzYxNTc5NDA2fQ.6B2yJqSI4hYvy-yev-x0-RVo3zpVSy2oTBHff3mzIH0
+
+{
+  "payload": {
+    "name": "Villa",
+    "type": "CATEGORY",
+    "description": "Luxury villa rentals",
+    "icon": "villa_icon"
+  }
+}
+
+###
+
+### Create Category - Apartment
+POST http://localhost:8090/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjEyMyIsImlhdCI6MTc2MTU3NTgwNiwiZXhwIjoxNzYxNTc5NDA2fQ.6B2yJqSI4hYvy-yev-x0-RVo3zpVSy2oTBHff3mzIH0
+
+{
+  "payload": {
+    "name": "Apartment",
+    "type": "CATEGORY",
+    "description": "Modern apartment rentals",
+    "icon": "apartment_icon"
+  }
+}
+
+###
+
+### Create COMMON - WiFi
+POST http://localhost:8090/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjEyMyIsImlhdCI6MTc2MTU3NTgwNiwiZXhwIjoxNzYxNTc5NDA2fQ.6B2yJqSI4hYvy-yev-x0-RVo3zpVSy2oTBHff3mzIH0
+
+{
+  "payload": {
+    "name": "WiFi",
+    "type": "COMMON",
+    "description": "High-speed internet access",
+    "icon": "wifi_icon"
+  }
+}
+
+###
+
+### Create COMMON - Swimming Pool
+POST http://localhost:8090/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjEyMyIsImlhdCI6MTc2MTU3NTgwNiwiZXhwIjoxNzYxNTc5NDA2fQ.6B2yJqSI4hYvy-yev-x0-RVo3zpVSy2oTBHff3mzIH0
+
+{
+  "payload": {
+    "name": "Swimming Pool",
+    "type": "COMMON",
+    "description": "Private or shared swimming pool",
+    "icon": "pool_icon"
+  }
+}
+
+###
+
+### Create COMMON - Parking
+POST http://localhost:8090/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjEyMyIsImlhdCI6MTc2MTU3NTgwNiwiZXhwIjoxNzYxNTc5NDA2fQ.6B2yJqSI4hYvy-yev-x0-RVo3zpVSy2oTBHff3mzIH0
+
+{
+  "payload": {
+    "name": "Parking",
+    "type": "COMMON",
+    "description": "Free parking available",
+    "icon": "parking_icon"
+  }
+}
+
+###
+
+### Create COMMON - Air Conditioning
+POST http://localhost:8090/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjEyMyIsImlhdCI6MTc2MTU3NTgwNiwiZXhwIjoxNzYxNTc5NDA2fQ.6B2yJqSI4hYvy-yev-x0-RVo3zpVSy2oTBHff3mzIH0
+
+{
+  "payload": {
+    "name": "Air Conditioning",
+    "type": "COMMON",
+    "description": "Climate control system",
+    "icon": "ac_icon"
+  }
+}
+
+###
+
+### Create COMMON - Kitchen
+POST http://localhost:8090/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjEyMyIsImlhdCI6MTc2MTU3NTgwNiwiZXhwIjoxNzYxNTc5NDA2fQ.6B2yJqSI4hYvy-yev-x0-RVo3zpVSy2oTBHff3mzIH0
+
+{
+  "payload": {
+    "name": "Kitchen",
+    "type": "COMMON",
+    "description": "Fully equipped kitchen facilities",
+    "icon": "kitchen_icon"
+  }
+}
+
+###
+
+### Create TAG - Family Friendly
+POST http://localhost:8090/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjEyMyIsImlhdCI6MTc2MTU3NTgwNiwiZXhwIjoxNzYxNTc5NDA2fQ.6B2yJqSI4hYvy-yev-x0-RVo3zpVSy2oTBHff3mzIH0
+
+{
+  "payload": {
+    "name": "Family Friendly",
+    "type": "TAG",
+    "description": "Great for families with children",
+    "icon": "family_icon"
+  }
+}
+
+###
+
+### Create TAG - Business Travel
+POST http://localhost:8090/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjEyMyIsImlhdCI6MTc2MTU3NTgwNiwiZXhwIjoxNzYxNTc5NDA2fQ.6B2yJqSI4hYvy-yev-x0-RVo3zpVSy2oTBHff3mzIH0
+
+{
+  "payload": {
+    "name": "Business Travel",
+    "type": "TAG",
+    "description": "Suitable for business travelers",
+    "icon": "business_icon"
+  }
+}
+
+###
+
+### Create TAG - Romantic
+POST http://localhost:8090/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjEyMyIsImlhdCI6MTc2MTU3NTgwNiwiZXhwIjoxNzYxNTc5NDA2fQ.6B2yJqSI4hYvy-yev-x0-RVo3zpVSy2oTBHff3mzIH0
+
+{
+  "payload": {
+    "name": "Romantic",
+    "type": "TAG",
+    "description": "Perfect for couples and romantic getaways",
+    "icon": "romantic_icon"
+  }
+}
+
+###
+
+### Create TAG - Budget
+POST http://localhost:8090/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjEyMyIsImlhdCI6MTc2MTU3NTgwNiwiZXhwIjoxNzYxNTc5NDA2fQ.6B2yJqSI4hYvy-yev-x0-RVo3zpVSy2oTBHff3mzIH0
+
+{
+  "payload": {
+    "name": "Budget",
+    "type": "TAG",
+    "description": "Affordable accommodation option",
+    "icon": "budget_icon"
+  }
+}
+
+###
+
+### Get Categories by Type - CATEGORY
+POST http://localhost:8090/api/category/getByType
+Content-Type: application/json
+
+{
+  "payload": {
+    "type": "CATEGORY"
+  }
+}
+
+###
+
+### Get Categories by Type - COMMON
+POST http://localhost:8090/api/category/getByType
+Content-Type: application/json
+
+{
+  "payload": {
+    "type": "COMMON"
+  }
+}
+
+###
+
+### Get Categories by Type - TAG
+POST http://localhost:8090/api/category/getByType
+Content-Type: application/json
+
+{
+  "payload": {
+    "type": "TAG"
+  }
+}
+
+###
+
+### Get All Categories
+POST http://localhost:8090/api/category
+Content-Type: application/json
+
+{
+  "payload": {}
+}
+
+###
+
+### Delete Category by ID
+DELETE http://localhost:8090/api/category
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlcjEyMyIsImlhdCI6MTc2MTU3NTgwNiwiZXhwIjoxNzYxNTc5NDA2fQ.6B2yJqSI4hYvy-yev-x0-RVo3zpVSy2oTBHff3mzIH0
+
+{
+  "payload": {
+    "id": 2
+  }
+}
